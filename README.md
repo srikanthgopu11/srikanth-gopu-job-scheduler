@@ -86,26 +86,13 @@ status: String (Pending/Running/Completed)
 
 createdAt: Timestamp
 
-📸 Screenshots
-1. Dashboard & Job Creation
-
-![alt text](https://via.placeholder.com/800x400?text=Dashboard+View+Showing+Job+List)
-
-2. Job Execution (Running State)
-
-![alt text](https://via.placeholder.com/800x400?text=Job+Running+State+with+Spinner)
-
-3. Webhook Success
-
-![alt text](https://via.placeholder.com/800x400?text=Webhook.site+Receiving+Data)
 
 🔗 Submission Details
 
-GitHub Repository: [Insert Your Link Here]
+GitHub Repository: [https://github.com/srikanthgopu11/srikanth-gopu-job-scheduler]
 
-Deployed Application: [Insert Your Link Here (e.g., Vercel/Render)]
+Deployed Application: [https://srikanth-job-scheduler.netlify.app/]
 
-Screen Recording: [Insert Your Google Drive/Loom Link Here]
 
 Project Structure
 
