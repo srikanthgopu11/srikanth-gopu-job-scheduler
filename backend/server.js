@@ -7,7 +7,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const WEBHOOK_URL = "https://webhook.site/a35993cd-25bc-4da2-aa9a-e2b55dc8cb8a"; // Get one from webhook.site
+const WEBHOOK_URL = "https://webhook.site/a35993cd-25bc-4da2-aa9a-e2b55dc8cb8a";
 
 // 1. Create Job
 app.post('/api/jobs', (req, res) => {
@@ -46,14 +46,11 @@ app.get('/api/jobs/:id', (req, res) => {
 app.post('/api/jobs/:id/run', (req, res) => {
   const jobId = req.params.id;
 
-  // Set to running
   db.run("UPDATE jobs SET status = 'running' WHERE id = ?", [jobId], () => {
     
-    // Simulate background work (3 seconds)
     setTimeout(() => {
       db.run("UPDATE jobs SET status = 'completed' WHERE id = ?", [jobId], async () => {
         
-        // Fetch job for Webhook
         db.get("SELECT * FROM jobs WHERE id = ?", [jobId], async (err, job) => {
           console.log(`Job ${jobId} completed. Sending webhook...`);
           try {

@@ -41,7 +41,6 @@ function App() {
     }, 1000);
   };
 
-  // Helper to get status styles
   const getStatusBadge = (status) => {
     switch (status.toLowerCase()) {
       case 'completed':
@@ -81,7 +80,6 @@ function App() {
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
           
-          {/* Form Card */}
           <div className="lg:col-span-1">
             <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
               <h2 className="text-lg font-semibold mb-4 flex items-center gap-2">
@@ -120,7 +118,6 @@ function App() {
             </div>
           </div>
 
-          {/* Jobs Table Card */}
           <div className="lg:col-span-2">
             <div className="bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden">
               <table className="w-full text-left border-collapse">
