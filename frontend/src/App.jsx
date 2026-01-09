@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { Play, Plus, Filter, Info, CheckCircle2, Clock, Loader2 } from 'lucide-react';
 
-const API_BASE = "https://job-scheduler-backend-evda.onrender.com";
+const API_BASE = "https://job-scheduler-backend-evda.onrender.com/api";
 
 function App() {
   const [jobs, setJobs] = useState([]);
